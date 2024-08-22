@@ -1,4 +1,8 @@
 
+import "/src/assets/none.webp"
+
+
+
 const GameitemsArtifact = [
     {
         id:'b-0',
