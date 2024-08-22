@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 
+import HPimg from "/images/HP1-final.ico"
 function HPblock () {
     const [healthPoints, setHealthPoints] = useState(3);
 
@@ -22,7 +23,7 @@ function HPblock () {
         ) : (
             Array(healthPoints).fill(0).map((_, index) => (
             <div key={index} className="testHP">
-                <img className="HPBARHERTS" src="public/images//HP1-final.ico" alt="misshp" />
+                <img className="HPBARHERTS" src={HPimg} alt="misshp" />
             </div>
             ))
         )}

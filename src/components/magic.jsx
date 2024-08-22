@@ -19,7 +19,7 @@ function Magic () {
 
     return (
         <div className="magic">
-        <textarea className="magic__textarea" type="text" value={magicArea} onChange={(e) => setMagicArea(e.target.value)} onBlur={handleBlur}
+        <textarea className="magic__textarea" type="text" placeholder="Магия" value={magicArea} onChange={(e) => setMagicArea(e.target.value)} onBlur={handleBlur}
         >  
         </textarea>
         </div>

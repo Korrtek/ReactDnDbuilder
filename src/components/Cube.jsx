@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import cubesila from "/src/assets/sila.webp"
+import cubedex from "/src/assets/lovkost.webp"
+import cubeint from "/src/assets/intellect.webp"
+import cubedef from "/src/assets/zashita.webp"
+import cubeatlet from "/src/assets/atlet.webp"
+import cuberito from "/src/assets/newrit.webp"
+
 
 function Cube () {
     
@@ -83,7 +90,7 @@ function Cube () {
                 <li>
                     <div className="d-flex">
                     <span>Сила</span>
-                    <img className="lvl__img" src="/src/assets/sila.webp" alt="sila" />
+                    <img className="lvl__img" src={cubesila} alt="sila" />
                     </div>
                     <div className="Cube__input">
                         <input type="text" placeholder="0" value={strengthcube} onChange={(e) => setStrengthCube(e.target.value)} onBlur={(e) => handleBlurCube(e, setStrengthCube)} />
@@ -93,7 +100,7 @@ function Cube () {
                 <li>
                     <div className="d-flex">
                     <span>Ловкость</span>
-                    <img className="lvl__img" src="/src/assets/lovkost.webp" alt="lovkost" />
+                    <img className="lvl__img" src={cubedex} alt="lovkost" />
                     </div>
                     <div className="Cube__input">
                         <input type="text" placeholder="0" value={agilitycube} onChange={(e) => setAgilityCube(e.target.value)} onBlur={(e) => handleBlurCube(e, setAgilityCube)} />
@@ -103,7 +110,7 @@ function Cube () {
                 <li>
                     <div className="d-flex">
                     <span>Интеллект</span>
-                    <img className="lvl__img" src="/src/assets/intellect.webp" alt="int" />
+                    <img className="lvl__img" src={cubeint} alt="int" />
                     </div>
                     <div className="Cube__input">
                         <input type="text" placeholder="0" value={intellectcube} onChange={(e) => setIntellectCube(e.target.value)} onBlur={(e) => handleBlurCube(e, setIntellectCube)}/>
@@ -113,7 +120,7 @@ function Cube () {
                 <li>
                     <div className="d-flex">
                     <span>Защита</span>
-                    <img className="lvl__img" src="/src/assets/zashita.webp" alt="zashita" />
+                    <img className="lvl__img" src={cubedef} alt="zashita" />
                     </div>
                     <div className="Cube__input">
                         <input type="text" placeholder="0" value={defencecube} onChange={(e) => setDefenceCube(e.target.value)} onBlur={(e) => handleBlurCube(e, setDefenceCube)}/>
@@ -123,7 +130,7 @@ function Cube () {
                 <li>
                     <div className="d-flex">
                     <span> Атлетика</span>
-                    <img className="lvl__img" src="/src/assets/atlet.webp" alt="atlet" />
+                    <img className="lvl__img" src={cubeatlet} alt="atlet" />
                     </div>
                     <div className="Cube__input">
                         <input type="text" placeholder="0" value={athleticcube} onChange={(e) => setAthleticCube(e.target.value)} onBlur={(e) => handleBlurCube(e, setAthleticCube)}/>
@@ -133,7 +140,7 @@ function Cube () {
                 <li>
                         <div className="d-flex">
                         <span>Риторика</span>
-                        <img className="lvl__img" src="/src/assets/newrit.webp" alt="rit" />
+                        <img className="lvl__img" src={cuberito} alt="rit" />
                         </div>
                         <div className="Cube__input">
                             <input type="text" placeholder="0" value={rhetoriccube} onChange={(e) => setRhetoricCube(e.target.value)} onBlur={(e) => handleBlurCube(e, setRhetoricCube)} />

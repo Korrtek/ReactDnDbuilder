@@ -1,11 +1,40 @@
 
+import nonewep from "/src/assets/none.webp";
+import minusruka from "/src/assets/minusruka.webp";
+import Sword from "/src/assets/Sword.webp";
+import Shield from "/src/assets/Shield.webp";
+import twohandsword from "/src/assets/twohandsword.webp";
+import bulava from "/src/assets/bulava.webp";
+import bigsword from "/src/assets/bigsword.webp";
+import axe from "/src/assets/axe.webp";
+import pike from "/src/assets/pike.webp";
+import kinjal from "/src/assets/kinjal.webp";
+import bow from "/src/assets/bow.webp";
+import assassinkinjal from "/src/assets/assasinkinjal.webp";
+import sniperbow from "/src/assets/sniperbow.webp";
+import arbolet from "/src/assets/arbolet.webp";
+import rapira from "/src/assets/rapira.webp";
+import zezl from "/src/assets/zezl.webp";
+import kolokol from "/src/assets/kolokol.webp";
+import posoh from "/src/assets/posoh.webp";
+import normalpechatka from "/src/assets/normalpechatka.webp";
+import megaposoh from "/src/assets/megaposoh.webp";
+import anafema from "/src/assets/anafema.webp";
+import musicinstrument from "/src/assets/musicinstrument.webp";
+import randomwep from "/src/assets/randomwep.webp";
+import pasific from "/src/assets/pasific.webp";
+import kinnight from "/src/assets/kinnight.webp";
+import bowseven from "/src/assets/bowseven.webp";
+import azur from "/src/assets/azur.webp";
+import oberon from "/src/assets/oberon.webp";
+import chrono from "/src/assets/chrono.webp";
+import tma from "/src/assets/tma.webp";
 
 const GameitemsWeapon = [
     {
         id:'0',
         title: "Ничего",
-        imageUrl: "/src/assets/none.webp",
-
+        imageUrl: nonewep,
         description:"Здесь может быть ваша реклама",
         Str: 0,
         Dex: 0,
@@ -13,13 +42,11 @@ const GameitemsWeapon = [
         Def: 0,
         Atl: 0,
         Rit: 0,
-        Slots: 0,
     },
     {
         id:'2',
         title: "Потеря руки",
-        imageUrl: "/src/assets/minusruka.webp",
-
+        imageUrl: minusruka,
         description:"Так я и получил прозвище 'Однорукий бандит'",
         Str: -5,
         Dex: -5,
@@ -27,13 +54,11 @@ const GameitemsWeapon = [
         Def: -4,
         Atl: -4,
         Rit: 0,
-        Slots: 0,
     },
     {
         id:'3',
         title: "Меч",
-        imageUrl: "/src/assets/Sword.webp",
-
+        imageUrl: Sword,
         description:"ДОБРОТНЫЙ ЖЕЛЕЗНЫЙ МЕЧ, КАЖДЫЙ УВАЖАЮЩИЙ СЕБЯ ВОИН ДОЛЖЕН ИМЕТЬ ПРИ СЕБЕ ТАКОЙ. ЭТО МОЙ МЕЧ. ТАКИХ МЕЧЕЙ МНОГО, НО ЭТОТ МОЙ. МОЙ МЕЧ — МОЙ ЛУЧШИЙ ДРУГ. ЭТО — МОЯ ЖИЗНЬ.",
         Str: 1,
         Dex: 0,
@@ -41,12 +66,11 @@ const GameitemsWeapon = [
         Def: 0,
         Atl: 0,
         Rit: 0,
-        Slots: 0,
     },
     {
         id:'4',
         title: "Щит",
-        imageUrl: "/src/assets/Shield.webp",
+        imageUrl: Shield,
         description:"Еще мой дед обменял свинью на этот щит, вещь полезная в хозяйстве, дед подпирал им дверь, отец копал им картошку, а я обменяю его на ночь с куртизанкой, вот что значит думать о будущем своих детей ",
         Str: 1,
         Dex: 0,
@@ -54,12 +78,11 @@ const GameitemsWeapon = [
         Def: 0,
         Atl: 0,
         Rit: 0,
-        Slots: 0,
     }, 
     {
         id:'5',
         title: "Двуручный меч",
-        imageUrl: "/src/assets/twohandsword.webp",
+        imageUrl: twohandsword,
         description:"Я получил власть, которая и не снилась моему отцу!А стоп...не тот меч...",
         Str: 3,
         Dex: 0,
@@ -67,12 +90,11 @@ const GameitemsWeapon = [
         Def: 0,
         Atl: -1,
         Rit: 0,
-        Slots: 0,
     }, 
     {
         id:'6',
         title: "Булава",
-        imageUrl: "/src/assets/bulava.webp",
+        imageUrl: bulava,
         description:"Я просто спросил дорогу у этого карлика, а потом у меня потемнело в глазах и я потерял сознание, последнее что помню это крик: САМ ТЫ КАРЛИК! ",
         Str: 2,
         Dex: 0,
@@ -80,12 +102,11 @@ const GameitemsWeapon = [
         Def: 0,
         Atl: 0,
         Rit: 0,
-        Slots: 0,
     },
     {
         id:'7',
         title: "Огромный двуручный меч",
-        imageUrl: "/src/assets/bigsword.webp",
+        imageUrl: bigsword,
         description:"Когда я первый раз взял его в руки, первое о чем я подумал 'я просто хочу быть счастливым '",
         Str: 5,
         Dex: 0,
@@ -93,12 +114,11 @@ const GameitemsWeapon = [
         Def: -2,
         Atl: -2,
         Rit: 0,
-        Slots: 0,
     },
     {
         id:'8',
         title: "Двуручный топор",
-        imageUrl: "/src/assets/axe.webp",
+        imageUrl: axe,
         description:"Пока я рубил деревья, моя жена развлекалась с конюхом, я конечно же сказал ей о своем недовольстве, теперь она рубит деревья",
         Str: 3,
         Dex: 0,
@@ -106,12 +126,11 @@ const GameitemsWeapon = [
         Def: -1,
         Atl: 0,
         Rit: 0,
-        Slots: 0,
     },
     {
         id:'9',
         title: "Копье",
-        imageUrl: "/src/assets/pike.webp",
+        imageUrl: pike,
         description:"Мой отец учил меня не стесняться размера моего копья",
         Str: 0,
         Dex: 2,
@@ -123,7 +142,7 @@ const GameitemsWeapon = [
     },
     {
         title: "Кинжал",
-        imageUrl: "/src/assets/kinjal.webp",
+        imageUrl: kinjal,
         description:"Выйглал его в театре, не помню как она называлась постановка, но там было что-то про два стула",
         Str: 0,
         Dex: 0,
@@ -131,12 +150,11 @@ const GameitemsWeapon = [
         Def: 0,
         Atl: 1,
         Rit: 0,
-        Slots: 0,
     },
     {
         id:'10',
         title: "Лук",
-        imageUrl: "/src/assets/bow.webp",
+        imageUrl: bow,
         description:"аыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы да иду, сори ничего не придумал",
         Str: 0,
         Dex: 1,
@@ -149,7 +167,7 @@ const GameitemsWeapon = [
     {
         id:'11',
         title: "Кинжал убийцы",
-        imageUrl: "/src/assets/assasinkinjal.webp",
+        imageUrl: assassinkinjal,
         description:"Холодное оружие с коротким (до 40 сантиметров) прямым или изогнутым клинком, заточенным с двух сторон.Согласно российскому ГОСТу кинжал — контактное, клинковое, колюще-режущее оружие с коротким или средним прямым или изогнутым 2-лезвийным клинком.Чаще всего кинжал используют для ближнего боя, но существуют разновидности кинжала с утяжелённым клинком, предназначенные для метания.Так мне сказали при покупке, это потом я узнал что это бывшая ножка от железного стула",
         Str: 0,
         Dex: 1,
@@ -162,7 +180,7 @@ const GameitemsWeapon = [
     {
         id:'12',
         title: "Лук снайпера",
-        imageUrl: "/src/assets/sniperbow.webp",
+        imageUrl: sniperbow,
         description:"Какой необычный лук",
         Str: 0,
         Dex: 1,
@@ -175,7 +193,7 @@ const GameitemsWeapon = [
     {
         id:'13',
         title: "Абралет",
-        imageUrl: "/src/assets/arbolet.webp",
+        imageUrl: arbolet,
         description:"Предупреждаю, я стреляю только один раз!.'Не стану им говорить, что я перезаряжаюсь 15 минут'",
         Str: 0,
         Dex: 2,
@@ -188,7 +206,7 @@ const GameitemsWeapon = [
     {
         id:'14',
         title: "Рапира",
-        imageUrl: "/src/assets/rapira.webp",
+        imageUrl: rapira,
         description:"Раз - рапирка, два – рапирка, Александр Юрьевич. ",
         Str: 0,
         Dex: 0,
@@ -201,7 +219,7 @@ const GameitemsWeapon = [
     {
         id:'15',
         title: "Волшебный Жезл",
-        imageUrl: "/src/assets/zezl.webp",
+        imageUrl: zezl,
         description:"Жезл",
         Str: 0,
         Dex: 0,
@@ -214,7 +232,7 @@ const GameitemsWeapon = [
     {
         id:'16',
         title: "Колокольчик жреца",
-        imageUrl: "/src/assets/kolokol.webp",
+        imageUrl: kolokol,
         description:"Колокольчик",
         Str: 0,
         Dex: 0,
@@ -227,7 +245,7 @@ const GameitemsWeapon = [
     {
         id:'17',
         title: "Магический посох",
-        imageUrl: "/src/assets/posoh.webp",
+        imageUrl: posoh,
         description:"Маг посох",
         Str: 0,
         Dex: 0,
@@ -240,7 +258,7 @@ const GameitemsWeapon = [
     {
         id:'18',
         title: "Печатка богов",
-        imageUrl: "/src/assets/normalpechatka.webp",
+        imageUrl: normalpechatka,
         description:"Печатка",
         Str: 0,
         Dex: 0,
@@ -253,7 +271,7 @@ const GameitemsWeapon = [
     {
         id:'19',
         title: "Высший посох",
-        imageUrl: "/src/assets/megaposoh.webp",
+        imageUrl: megaposoh,
         description:"высший посох",
         Str: 0,
         Dex: 0,
@@ -266,7 +284,7 @@ const GameitemsWeapon = [
     {
         id:'20',
         title: "Анафема нежити",
-        imageUrl: "/src/assets/anafema.webp",
+        imageUrl: anafema,
         description:"Анафема ",
         Str: 0,
         Dex: 0,
@@ -279,7 +297,7 @@ const GameitemsWeapon = [
     {
         id:'21',
         title: "Музыкальный инструмент",
-        imageUrl: "/src/assets/musicinstrument.webp",
+        imageUrl:  musicinstrument,
         description:"Барабан ",
         Str: 0,
         Dex: 0,
@@ -292,7 +310,7 @@ const GameitemsWeapon = [
     {
         id:'22',
         title: "Найденное оружие",
-        imageUrl: "/src/assets/randomwep.webp",
+        imageUrl: randomwep,
         description:"Тяжелое, крепкое, непонятного цвета, будем надеятся это не лошадинный помет.",
         Str: 1,
         Dex: 1,
@@ -305,7 +323,7 @@ const GameitemsWeapon = [
     {
         id:'23',
         title: "Меч Пацифиста",
-        imageUrl: "/src/assets/pasific.webp",
+        imageUrl: pasific,
         description:"При попытке нанести удар меч будто отказывается это делать и не наносит никакого урона, хоть это и одноручный меч, он настолько тяжелый, что приходится держать его двумя руками. Особенность: если экипировать этот меч игрок не сможет атаковать, он может только защищаться, но в данном случае он всегда контратакует, даже если выкинул 1 на защиту, перед смертью он атакует.",
         Str: 0,
         Dex: 0,
@@ -318,7 +336,7 @@ const GameitemsWeapon = [
     {
         id:'24',
         title: "Кинжал ночи",
-        imageUrl: "/src/assets/kinnight.webp",
+        imageUrl: kinnight,
         description:"этот кинжал настолько острый, что рассекает сам свет. Особенность: Любой успешный удар убивает с первого раза (кроме боссов им он отнимает 2 здоровья).",
         Str: 0,
         Dex: 0,
@@ -331,7 +349,7 @@ const GameitemsWeapon = [
     {
         id:'25',
         title: "Лук семи ветров",
-        imageUrl: "/src/assets/bowseven.webp",
+        imageUrl: bowseven,
         description:"Этот лук был подарен людям от древних созданий, до сих пор все считали, что это лишь сказка.Особенность: Порыв ветра, игрок может выйти из боя без штрафов и провокации противника",
         Str: 0,
         Dex: 1,
@@ -344,7 +362,7 @@ const GameitemsWeapon = [
     {
         id:'26',
         title: "Посох Азуры",
-        imageUrl: "/src/assets/azur.webp",
+        imageUrl: azur,
         description:"Этот посох был создан из ветви самых древних деревьев, говорят даже просто держа его в рука маг чувствует непомерную силу. Особенность: Любое заклинание можно использовать на +1 цель ",
         Str: 0,
         Dex: 0,
@@ -357,7 +375,7 @@ const GameitemsWeapon = [
     {
         id:'27',
         title: "Огромный меч Оберона",
-        imageUrl: "/src/assets/oberon.webp",
+        imageUrl: oberon,
         description:"Этот чрезвычайно длинный и тяжёлый клинок с лёгкостью способен за один взмах разрубить нескольких человек в латных доспехах.Когда-то он назывался по-другому, но это было так давно, что никто уже и не помнит.Особенность: после получения смертельной раны, может 3 хода совершать атаки и не умирать, в это время бонус меча становится +10 сила (единица не считается 100% крит промахом)Но игрока после этого ничем не спасти.",
         Str: 5,
         Dex: 0,
@@ -370,7 +388,7 @@ const GameitemsWeapon = [
     {
         id:'28',
         title: "Меч Хроноса",
-        imageUrl: "/src/assets/chrono.webp",
+        imageUrl: chrono,
         description:"Ходят поверия, что именно этот Клинок был выкован Хроносом в давние времена первородному человеку. Особенность: вернуться во времени, позволяет 1 раз за бой перекинуть кубик на защиту или на атаку.",
         Str: 0,
         Dex: 3,
@@ -383,7 +401,7 @@ const GameitemsWeapon = [
     {
         id:'29',
         title: "Меч тьмы",
-        imageUrl: "/src/assets/tma.webp",
+        imageUrl: tma,
         description:"Этот меч будто отталкивает свет, при сильном взмахе он выпускает сгусток тьмыОсобенность: 3 раза за бой может атаковать дистанционно",
         Str: 0,
         Dex: 0,

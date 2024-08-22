@@ -1,9 +1,14 @@
 
+import noneboots from "/src/assets/none.webp"
+import minusleg from "/src/assets/minusleg.webp"
+
+
+
 const GameitemsBoots = [
     {
         id:'c-0',
         title: "Ничего",
-        imageUrl: "/src/assets/none.webp",
+        imageUrl: noneboots,
         description:"Здесь может быть ваша реклама",
         Str: 0,
         Dex: 0,
@@ -15,7 +20,7 @@ const GameitemsBoots = [
     {
         id:'c-1',
         title: "Потеря ноги",
-        imageUrl: "/src/assets/minusleg.webp",
+        imageUrl: minusleg,
 
         description:"Ай, больно в ноге",
         Str: -5,

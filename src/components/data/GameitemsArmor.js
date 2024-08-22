@@ -1,9 +1,25 @@
+import nonearmor from "/src/assets/none.webp"
+import realmantiya from "/src/assets/realmantiya.webp"
+import roba from "/src/assets/roba.webp"
+import mantiya from "/src/assets/mantiya.webp"
+import prostoman from "/src/assets/prostoman.webp"
+import odezdazre from "/src/assets/odezdazre.webp"
+import lite from "/src/assets/lite.webp"
+import renger from "/src/assets/renger.webp"
+import briga from "/src/assets/briga.webp"
+import assaarm from "/src/assets/assaarm.webp"
+import lats from "/src/assets/lats.webp"
+import wolfarm from "/src/assets/wolfarm.webp"
+import gigaarm from "/src/assets/gigaarm.webp"
+import mrach from "/src/assets/mrach.webp"
+import zazd from "/src/assets/zazd.webp"
+import clownKek from "/src/assets/clownKek.webp"
 
 const GameitemsArmor = [
     {
         id:'a-0',
         title: "Ничего",
-        imageUrl: "/src/assets/none.webp",
+        imageUrl: nonearmor,
         description:"Здесь может быть ваша реклама",
         Str: 0,
         Dex: 0,
@@ -15,7 +31,7 @@ const GameitemsArmor = [
     {
         id:'a-1',
         title: "Мантия",
-        imageUrl: "/src/assets/realmantiya.webp",
+        imageUrl: realmantiya,
         description:"Мантия",
         Str: 0,
         Dex: 0,
@@ -27,7 +43,7 @@ const GameitemsArmor = [
     {
         id:'a-2',
         title: "Роба послушника",
-        imageUrl: "/src/assets/roba.webp",
+        imageUrl: roba,
         description:"Роба",
         Str: 0,
         Dex: 0,
@@ -39,7 +55,7 @@ const GameitemsArmor = [
     {
         id:'a-3',
         title: "Балахон мага",
-        imageUrl: "/src/assets/mantiya.webp",
+        imageUrl:  mantiya,
         description:"мага",
         Str: 0,
         Dex: 0,
@@ -51,7 +67,7 @@ const GameitemsArmor = [
     {
         id:'a-4',
         title: "Балахон прислужника",
-        imageUrl: "/src/assets/prostoman.webp",
+        imageUrl: prostoman,
         description:"3232",
         Str: 0,
         Dex: 0,
@@ -63,7 +79,7 @@ const GameitemsArmor = [
     {
         id:'a-5',
         title: "Одеяние жреца",
-        imageUrl: "/src/assets/odezdazre.webp",
+        imageUrl: odezdazre,
         description:"3232",
         Str: 0,
         Dex: 0,
@@ -75,7 +91,7 @@ const GameitemsArmor = [
     {
         id:'a-6',
         title: "Акетон",
-        imageUrl: "/src/assets/lite.webp",
+        imageUrl: lite,
         description:"3232",
         Str: 0,
         Dex: 0,
@@ -87,7 +103,7 @@ const GameitemsArmor = [
     {
         id:'a-7',
         title: "Доспех рейнджера",
-        imageUrl: "/src/assets/renger.webp",
+        imageUrl: renger,
         description:"3232",
         Str: 0,
         Dex: 1,
@@ -99,7 +115,7 @@ const GameitemsArmor = [
     {
         id:'a-8',
         title: "Бригантина",
-        imageUrl: "/src/assets/briga.webp",
+        imageUrl: briga,
         description:"3232",
         Str: 1,
         Dex: 0,
@@ -111,7 +127,7 @@ const GameitemsArmor = [
     {
         id:'a-9',
         title: "Доспех ассасина",
-        imageUrl: "/src/assets/assaarm.webp",
+        imageUrl: assaarm,
         description:"3232",
         Str: 0,
         Dex: 1,
@@ -123,7 +139,7 @@ const GameitemsArmor = [
     {
         id:'a-10',
         title: "Латный доспех",
-        imageUrl: "/src/assets/lats.webp",
+        imageUrl: lats,
         description:"3232",
         Str: 2,
         Dex: 0,
@@ -135,7 +151,7 @@ const GameitemsArmor = [
     {
         id:'a-11',
         title: "Волчий доспех",
-        imageUrl: "/src/assets/wolfarm.webp",
+        imageUrl: wolfarm,
         description:"3232",
         Str: 3,
         Dex: 0,
@@ -147,7 +163,7 @@ const GameitemsArmor = [
     {
         id:'a-12',
         title: "Доспех гиганта",
-        imageUrl: "/src/assets/gigaarm.webp",
+        imageUrl: gigaarm,
         description:"3232",
         Str: 2,
         Dex: 0,
@@ -159,7 +175,7 @@ const GameitemsArmor = [
     {
         id:'a-13',
         title: "Мрачный доспех",
-        imageUrl: "/src/assets/mrach.webp",
+        imageUrl: mrach,
         description:"Когда вы надеваете доспех, сам воздух вокруг вас замерзает, в голове слышны голоса, вы понимаете, что тело иногда вас не слушается. Особенность: доспех обладает собственной волей, после вашего неудачного броска, может спасти вас от ранения или смерти, еще раз бросив кубик. Иногда будет забирать контроль во время боя.",
         Str: 2,
         Dex: 0,
@@ -171,7 +187,7 @@ const GameitemsArmor = [
     {
         id:'a-14',
         title: "Доспех жажды",
-        imageUrl: "/src/assets/zazd.webp",
+        imageUrl: zazd,
         description:"Когда кровь попадает на этот доспех он будто оживает и впитывает её. Особенность: когда носитель на краю смерти (остался один удар до смерти, если босс, то ровно перед смертью, игрок может сделать еще один ход) Дает +2 к каждой характеристике и 1 урона на 1 ход.",
         Str: 0,
         Dex: 0,
@@ -183,7 +199,7 @@ const GameitemsArmor = [
     {
         id:'99',
         title: "Костюм шута",
-        imageUrl: "/src/assets/clownKek.webp",
+        imageUrl: clownKek,
         description:" Пестрая шляпа со звонкими бубенцами (динь-дилинь!)Стильные остроконечные туфли с бриджамиИ кардиган шутаОсобенность: Один раз за бой вы можете попробовать сделать бросок на риторику и рассказать анекдот. Если у вас получается и анекдот достаточно смешной - противник (кроме босса) пропускает один ход со смеху Звук бубенцов неимоверно бесит окружающих (просто как факт) (не действует на нежить, только если выкинуть 20)«Факт, что шутку вы должны рассказывать сами»",
         Str: 0,
         Dex: 0,

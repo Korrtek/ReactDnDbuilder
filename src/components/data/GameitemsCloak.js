@@ -1,9 +1,19 @@
 
+import nonecloak from "/src/assets/none.webp"
+import frostspina from "/src/assets/frostspina.webp"
+import bearspina from "/src/assets/bearspina.webp"
+import carapspina from "/src/assets/carapspina.webp"
+
+
+
+
+
+
 const GameitemsCloak = [
     {
         id:'d-0',
         title: "Ничего",
-        imageUrl: "/src/assets/none.webp",
+        imageUrl: nonecloak,
         description:"Здесь может быть ваша реклама",
         Str: 0,
         Dex: 0,
@@ -15,7 +25,7 @@ const GameitemsCloak = [
     {
         id:'d-1',
         title: "Плащ пришествия зимы",
-        imageUrl: "/src/assets/frostspina.webp",
+        imageUrl: frostspina,
         description:"Когда-то пренадлежал магу льда, поговаривают, когда он проходил мимо, кровь застывала в жилах",
         Str: 0,
         Dex: 0,
@@ -27,7 +37,7 @@ const GameitemsCloak = [
     {
         id:'d-2',
         title: "Плащ медвежьей стаи",
-        imageUrl: "/src/assets/bearspina.webp",
+        imageUrl: bearspina,
         description:"Я забрел в какой-то ветхий дом в глубине леса, тут раньше точно жил человек, видимо медведи растерзали всю семью, вижу три трупа медведей и скелет маленькой девочки.",
         Str: 0,
         Dex: 1,
@@ -39,7 +49,7 @@ const GameitemsCloak = [
     {
         id:'d-3',
         title: "Плащ погибшего защитника",
-        imageUrl: "/src/assets/carapspina.webp",
+        imageUrl: carapspina,
         description:"Плащ пренадлежал единственному рыцарю замка, замок находился в осаде уже 20 дней, припасы давно закончились, господин погиб от жажды, только рыцарь стоял в дверном проёме замка, кажется ему в спину всадили 26 мечей, так он и погиб никого не пустив. ",
         Str: 1,
         Dex: 0,

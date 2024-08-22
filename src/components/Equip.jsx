@@ -6,6 +6,8 @@ import { GameitemsArmor } from "./data/GameitemsArmor.js";
 import { GameitemsArtifact } from "./data/GameitemsArtifact.js";
 import { GameitemsBoots } from "./data/GameitemsBoots.js";
 import { GameitemsCloak } from "./data/GameitemsCloak.js";
+import eqparrov from "/images/arrow__buttom.svg"
+
 function Equip (props) {
     const [ renderModal, setRenderModal] = useState(false);
 
@@ -69,7 +71,7 @@ function Equip (props) {
         <div className="Equip__wrapper">
         <div className="chose__section" onClick={toggleModal}>
             {selectedItemStats.name}
-                <img className="siction__arrow" src="../public/images/arrow__buttom.svg" alt="" />
+                <img className="siction__arrow" src={eqparrov} alt="arrow" />
         </div>
             <div className="testEup__container">
                 <div className="testEup">
