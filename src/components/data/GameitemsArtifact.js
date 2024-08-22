@@ -1,5 +1,5 @@
 
-import "/src/assets/none.webp"
+import none from "/src/assets/none.webp"
 
 
 
@@ -7,7 +7,7 @@ const GameitemsArtifact = [
     {
         id:'b-0',
         title: "Ничего",
-        imageUrl: "/src/assets/none.webp",
+        imageUrl: none,
         description:"Здесь может быть ваша реклама",
         Str: 0,
         Dex: 0,
