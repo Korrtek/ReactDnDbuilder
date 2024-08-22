@@ -1,0 +1,21 @@
+<svg width="90.000000" height="90.000000" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_29">
+			<rect id="Overlay+Border" rx="3.000000" width="88.000000" height="88.000000" transform="translate(1.000000 1.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<pattern id="pattern_4_300" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+			<use xlink:href="#image4_30_0" transform="matrix(0.022727,0,0,0.022727,0,0)"/>
+		</pattern>
+		<image id="image4_30_0" width="44.000000" height="44.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAABHNCSVQICAgIfAhkiAAAA1BJREFUWIXtlz1vHFUUhp/3zu7au/5Yy44iQoKJIUEJBQgkPiQiIRc0CCT+AT+AKoqFlFRbA+IHGAp6V4gmEingF4BEAQUSFkEClFjC9q5jZ2fuS7EO8sfMZtYsLtA80lRnznnfO3PmzL1QUVFRUVHxf0bjKNLpdBo7O5sv2Ho2SrVgJ1F+VHtK8DboNaAGTALJgfQ94PNPPvr0ehmtMA7DvV5vPopLllsiNiwngjC4tAi6BpwB5vYN1w9c04b3ymqNxXCapC1MMzdo5oD2sHzBU2W1xmI4KDSGKOQv5DBZaa2yNw6jFmNSFLOZKFHi17JaYzHcR7WimHD9sQXM12W1CoVGIYlR1uGBY4gQesIbOSkpcBf4Cvx9zHSnrNZYDGdJUIgGqU/mP1wPvyVZ0pV2Q+b6MtiIbaK+teJtFH4RsaEYFgl+0faXp2o4yZLfga2HtYfdelZvhTRtZ4GzImlL8S/MZ85YI/G8rKs4vg666uDnsGbBH5+q4fX19XtLS0+2G/3wEoozlqblCIClddB5B9/CLAmehv3+8SC/0Wh0y2qN5aNbW1vLbE1ZnLM8fShopxBnBMuCixz/u97dbm6f7lgDCEF7RTHB/cJE8ePE5sTpG7ZjWhjUEMPmu16vV5x7hDEabhSK2vqTfzr2MLK/WV1dPX3DaZJ6MHvzTLHFYPYexWnKDxQsJo/x9XA/ZJKO9aKszMG7DLaRR9mNzSGtlKdzUoNHqdX69tHfHRAHi4gFWrsj65zAWy62mhCPmQp2gjRnyNvRTYYHoT+Kzlie8MrKylRU/ZJy6jlwxpH3yX84zVrNFxnh5DOe/XBIF3F2Ni8m8zLilaJcK7zb6XQKt6fHtE5i8CA3b36wEKOu5Ee1aFgeWkA8s7GxUdrwiXq40+nU9vbutfv95vk0jZcJnn0UM0wEhXN2fB64BjwxtJjVXVhYKD3WRjJ848Mbb0mxtbWz5aDGpBQnLScAQtc9OLtF27Og2TL1hS8wwpseybBxU2Y+YDBYPhCjDSw+5ut5sK958BSy1O12/5uWmG117/R6rSuZwoUgZm0nYeB6L0q3hN8EXgUuMxhjBjYFPxtuO9MXoeZ3MG9EcT/g7ejw08z0dOHGqaKioqKi4l/xNywjO2J0LJr3AAAAAElFTkSuQmCC"/>
+	</defs>
+	<rect id="Overlay+Border" rx="3.000000" width="88.000000" height="88.000000" transform="translate(1.000000 1.000000)" fill="#202225" fill-opacity="0.800000"/>
+	<g clip-path="url(#clip4_29)">
+		<g opacity="0.700000">
+			<rect id="shoes.png" width="44.000000" height="44.000000" transform="translate(23.000000 23.000000)" fill="url(#pattern_4_300)" fill-opacity="1.000000"/>
+		</g>
+	</g>
+	<rect id="Overlay+Border" rx="3.000000" width="88.000000" height="88.000000" transform="translate(1.000000 1.000000)" stroke="#5E6165" stroke-opacity="0.800000" stroke-width="2.000000"/>
+</svg>

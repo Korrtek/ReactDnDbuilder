@@ -1,0 +1,1012 @@
+@import 'normalize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: #161719;
+    font-family: "Poppins", sans-serif;
+   
+}
+
+// .container {
+//     // margin-top: 20px;
+// }
+
+.header {
+    background-color: #202226;
+    display: flex;
+}
+
+
+.d-flex {
+    display: flex;
+    // gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.logo__img {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;   
+}
+
+
+
+a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    background-color: #282B2F;
+    border: 1px solid #393C42;
+    border-radius: 6px;
+    height: 36px;
+    width: 155px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+
+
+
+.main__wrapper {
+    display: flex;
+    margin-top: 15px;
+}
+
+.equip__stats {
+    width: 415px;
+    height: 850px;
+    background-color: #282B2F;
+    border-radius: 6px;
+    margin-left: 20px;
+    border: 1px solid #393C42;
+}
+
+
+.main__mid {
+    margin-left: 10px;
+}
+
+.mid__nav {
+    display: flex;
+    gap: 3px;
+}
+
+.mid__nav__btn {
+    width:155px ;
+    height: 40px;
+    background-color: #282B2F;
+    border-radius: 6px;
+    border: 1px solid #393C42;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mid__nav__btn:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+}
+
+
+.mid__info {
+    background-color: #282B2F;
+    margin-top: 8px;
+    width: 1100px;
+    border-radius: 6px;
+    height: 800px;
+    padding: 20px 0px 0px 20px;
+    display: flex;
+    gap: 10px;
+    border: 1px solid #393C42;
+}
+
+.info__img {
+    height: 66px;
+    width: 66px;
+    background: url('./images/Armor__icon.svg');
+    background-position: center;
+    border-radius: 6px;
+    border: 1px solid #5E6165;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chose__section {
+    height: 50px;
+    width: 980px;
+    background-color: #202226;
+    border-radius: 6px;
+    border:1px solid #5E6165;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+}
+
+.inner__img {
+    width: 86px;
+    height: 86px;
+}
+
+
+
+.hp__block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    user-select: none;
+    align-items: center;
+    
+}
+
+
+.hp__title {
+    color: #C23030;
+    border-radius: 6px;
+    border: 1px solid #C23030;
+    height: 40px;
+    width: 320px;
+    margin-left: 10px;
+    background-color: #282B2F;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.hp__bar {
+    background-color: #282B2F;
+    width: 320px;
+    margin-left: 10px;
+    border-radius: 6px;
+    height: 735px;
+    border: 1px solid #393C42;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.equip__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.equip__container {
+    background: url('/public/images/final-equip-circle.svg');
+    background-repeat: no-repeat;
+    height: 420px;
+    width: 400px;
+    margin: 20px auto;
+    
+}
+
+.gray__split {
+    height: 1px;
+    width: 390px;
+    background-color: #393C42;
+}
+
+.belt__title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.belt__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.belt__input {
+    width: 380px;
+    background-color: #202225;
+    border-radius: 6px;
+    border: 1px solid #5E6165;
+    height: 40px;
+    
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 340px;
+}
+
+.stats__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.stats__input {
+    width: 100px;
+    height: 50px;
+    background-color: #202225;
+    border-radius: 6px;
+    border: 1px solid #5E6165;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.armor {
+    width: 90px;
+    height: 90px;
+    margin: 0px 0px 0px 153px;
+    background-color: #202225;
+    background: url('/public/images/armor-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+    border: 2px solid #5E6165;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+// .armor__img {
+//     width: 64px;
+//     height: 64px;
+// }
+
+.left__arm {
+    width: 90px;
+    height: 90px;
+    background-color: #202225;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #5E6165;
+    margin-top: -4px;
+    border-radius: 6px;
+    background: url('/public/images/arm-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;
+}
+
+
+.close {
+    border-radius: 6px;
+    border: 2px solid #5E6165;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    border-right: none;
+    background: url('/public/images/close__icon.svg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+
+.close:hover {
+    border: 2px solid rgb(168, 0, 0);
+    border-bottom: none;
+    border-right: none;
+    background: url('/public/images/close-icon-red.svg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+
+.right__arm {
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/images/arm-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -90px 0px 0px 304px;
+    border-radius: 6px;
+    border: 2px solid #5E6165;
+    user-select: none;
+}
+
+.right__arm:active {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+}
+
+.artifact {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin: -19px 0px 0px 152px;
+    border-radius: 6px;
+    border: 2px solid #5E6165;
+    background: url('/public/images/artifack-icon-darker.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;
+}
+
+.left__leg {
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    margin-left: 8px;
+    border: 2px solid #5E6165;
+    border-radius: 6px;
+    background: url('/public/images/boots-svg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.right__leg {
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    margin: -100px 0px 0px 298px ;
+    background: url('/public/images/boots-svg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #5E6165;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.cloak {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin: 0px 0px 0px 153px;
+    background: url('/public/images/cloaka-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #5E6165;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.cloak:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+.right__leg:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+.left__leg:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+.artifact:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+.right__arm:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+
+.left__arm:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+
+.armor:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+.armor:focus {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+
+
+.equip__inner {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+
+.character__inner {
+    background-color: #282B2F;
+    display: flex;
+    color: #fff;
+}
+
+.character__photo {
+    width: 720px;
+    height: 120px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.photo {
+    background-color: #202226;
+    border-radius: 6px;
+    border: none;
+    width: 720px;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.character__other {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 5px;
+}
+
+.character__name,
+.character__age,
+.character__race,
+.character__class,
+.character__osoben {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    background-color: #202226;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    resize: none;
+}
+
+.character__name__inp {
+    width: 320px;
+    height: 60px;
+}
+
+.character__age__inp,
+.character__race__inp{
+    height: 36px;
+    width: 320px;
+}
+
+.character__osoben__inp {
+    height: 220px;
+    width: 320px;
+    -webkit-text-decoration-skip: none;
+}
+
+.class__osoben__inp {
+    height: 170px;
+    width: 320px;
+}
+
+.class__osoben__inp::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #363636;
+    cursor: pointer;
+}
+
+.class__osoben__inp::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.class__osoben__inp::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+.class__osoben__inp::-webkit-scrollbar-track {
+    background-color: #707070;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.character__class__selector {
+    height: 36px;
+    width: 320px;
+    border-radius: 6px;
+    background-color: #202226;
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: column;
+    align-items: flex-end;
+    user-select: none;
+    padding: 0px 0px 0px 10px;
+    cursor: pointer;
+}
+
+
+
+
+.question-mark {
+    position: relative;
+    cursor: help;
+    font-size: 15px;
+    color: #fff;
+}
+
+// мне стыдно за это насёр но ладно
+
+.question-mark:before {
+    content: ('В поле слева вводите кол-во бросков, справа - сколько статов получили.Прокачка той характеристики, которую используете осуществляется следующим образом: 10*на требуемый лвл, именно такое кол-во бросков(удачных) потребуется для повышения уровня. Пример: вы сейчас 0 уровень, вы выкинули 10 раз удачно броски на силу, получили уровень в характеристике силы, для второго уровня вам нужно будет 10*2=20 удачных бросков(прошлые броски не учитывается, они сбрасываются при повышении уровня).1-4 лвл +1 к используемой характеристике, 5лвл - Улучшение особенности персонажа или класса (на выбор),6-9лвл +1 к используемой характеристике.10 лвл: Путь Силы-вы настолько натренировали свое тело, что можете использовать мульти атаку без штрафа все время.Путь Ловкости-Вы развили такую ловкость, что можете наносить сразу 2 удара перед действием на защиту.Путь Атлетики-Ваше тело стало настолько атлетичным, что при броске на атлетику вы бросаете кубик трижды. Путь Защиты-Вы постигли мастерство защиты, вы можете защищаться от захватов, а также дважды перебрасывать кубик на защиту. Путь Интеллекта-Вы преуспели в изучении древних знаний, вы можете изучить заклинание высшего уровня. Путь Риторики-все ваши броски на риторику автоматически успешны, кроме броска на 1');
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #202226;
+    border: 1px solid #666;
+    color: #fff;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    display: none;
+    width: 1000px;
+}
+
+.question-mark:hover:before {
+    display: block;
+}
+
+
+.Cube__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+
+.Cube__input {
+    display: flex;
+    gap: 10px;
+}
+
+.Lvling__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 37px;
+    margin-top: 8px;
+}
+
+
+.Lvling__wrapper input {
+    width: 200px;
+    
+}
+
+.lvl__img {
+    width: 40px;
+    height: 40px;
+}
+
+.Cube__input {
+    display: flex;
+}
+
+.cube {
+    background-color: #202226;
+    width: 620px;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cube__img {
+    background-image: url('/public/images/finald20.svg');
+    background-position: center;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.cube__btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    border-radius: 6px;
+    border: 2px solid #5E6165;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cube__btn:hover {
+    border: 2px solid #7e0000;
+}
+
+.cube__stoy {
+    font-weight: 600;
+    font-size: 28px;
+    width: 500px;
+    height: 150px;
+    // border: 2px solid #5E6165;
+    border-radius: 6px;
+    text-align: center;
+    color: #fff;
+}
+
+.magic {
+    width: 1060px;
+    height: 760px;
+    color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slots__magic {
+    background-color: #202226;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.slots__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.slots__title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.magic__textarea {
+    height: 800px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.Money {
+    height: 60px;
+    color: #fff;
+    // background-color:#202225;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Money__span {
+    font-size: 60px;
+}
+
+.Money__inp {
+    height:50px;
+    width: 830px;
+    font-size: 40px;
+    color: #ffd700;
+    padding-left: 10px;
+}
+
+.inventory {
+    width: 1060px;
+    height: 700px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.notice {
+    width: 1060px;
+    height: 760px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.herostory {
+    width: 1060px;
+    height: 760px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.Equip__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.Eqp__description {
+    color: #fff;
+    font-size: 24px;
+    background-color:#202225;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.Eqp_sats {
+    border-radius: 6px;
+    border: 2px solid #5E6165; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 23px;
+    
+}
+.Eqp_sats div:nth-child(1){
+    margin-left: 10px;
+    
+}
+
+.Eqp__story {
+    height: 650px;
+    border-radius: 6px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 1060px;
+}
+
+.rotate_eqp {
+    display: flex;
+    gap: 18px;
+}
+
+
+
+
+.modal__items {
+    border: 2px solid #5E6165; 
+    background-color: #202225;
+    border-radius: 6px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.modal__items:hover {
+    background-color: #363636; 
+    user-select: none;
+}
+
+.modal__img {
+    width: 38px;
+    height: 38px;
+    user-select: none;
+}
+
+.siction__arrow {
+    user-select: none;
+}
+
+.classes__arrow {
+    width: 30px;
+    height: 30px;
+    user-select: none;
+}
+
+
+.charModal {
+    border: 1px solid #363636; 
+    background-color: #202225;
+    border-radius: 6px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    // display: flex;
+    // align-items: center;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    gap: 10px;
+    outline: 1px solid #202225;
+}
+
+.charModal:hover {
+    box-shadow: 0px 0px 13px 0px rgba(110, 139, 163,0.5);
+    cursor: pointer;
+}
+
+
+// Скорее всего это решение насрет мне в будущем, но пока так. Чтопы выпадающие окна не двигаги другие элементы 
+
+.testList {
+    position: absolute;
+    width: 320px;
+    top: 435px;
+}
+
+// .testEup {
+//     height: 300px;
+// }
+
+.testEup__container {
+    position: absolute;
+    width: 980px;
+    top: 183px;
+    height: 680px;
+    overflow-y: auto;
+}
+
+
+.testEup__container::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+    background-color: #363636;
+    cursor: pointer;
+}
+
+.testEup__container::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    // border-radius: 10px;
+    cursor: pointer;
+}
+
+.testEup__container::-webkit-scrollbar-thumb:hover {
+    background-color: #363636;
+    cursor: pointer;
+}
+
+.testEup__container::-webkit-scrollbar-track {
+    background-color: #b1b1b1;
+    // border-radius: 10px;
+    cursor: pointer;
+}
+
+// HP BAR
+
+.HPBARHERTS {
+    width: 245px;
+    height: 245px;
+    
+}
+
+.HPtogglers {
+    height: 55px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: #282B2F;
+    border: 1px solid #393C42;
+    border-radius: 6px;
+    margin-left: 7px;
+}
+
+.HPtogglersbtn__plus,
+.HPtogglersbtn__minus{
+    border: 2px solid #5E6165;
+    border-radius: 6px;
+    width:160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.HPtogglersbtn__plus:hover {
+    color: green;
+    
+}
+
+.HPtogglersbtn__minus:hover {
+    color: red;
+    
+}
+
+.CharacterImg{
+    display: none;
+}
+
+.Character__img__sended {
+    max-width:720px ;
+    max-height:760px;
+}
+
+.hp-zero {
+    font-size: 60px;
+    color: #b10000;
+}
+
