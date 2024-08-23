@@ -92,29 +92,172 @@ function App () {
     const [itemStats, setItemStats] = useState(() => {
         const storedStats = localStorage.getItem('itemStats');
         return storedStats ? JSON.parse(storedStats) : {
+        name: "",
         strength: 0,
         agility: 0,
         intelligence: 0,
         defense: 0,
         athletics: 0,
         rhetoric: 0,
+        description: '',
         };
     });
+
 
     useEffect(() => {
         localStorage.setItem('itemStats', JSON.stringify(itemStats));
     }, [itemStats]);
 
-        // подумать как считать статы чуть позже 
 
-        const handleItemStatsChange = (stats) => {
-                setItemStats(stats);
-        }; 
-        // const handleItemStatsChange = (newStats) => {
-        //     setItemStats((prevStats) => ({ ...prevStats, ...newStats }));
-        // };
+    const [armorItemStats, setArmorItemStats] = useState(() => {
+        const storedStats = localStorage.getItem('armorItemStats');
+        return storedStats ? JSON.parse(storedStats) : {
+            strength: 0,
+            agility: 0,
+            intelligence: 0,
+            defense: 0,
+            athletics: 0,
+            rhetoric: 0,
+        };
+        });
+
+        useEffect(() => {
+        localStorage.setItem('armorItemStats', JSON.stringify(armorItemStats));
+        }, [armorItemStats]);
+
+
+        const [leftArmItemStats, setLeftArmItemStats] = useState(() => {
+            const storedStats = localStorage.getItem('leftArmItemStats');
+            return storedStats ? JSON.parse(storedStats) : {
+                strength: 0,
+                agility: 0,
+                intelligence: 0,
+                defense: 0,
+                athletics: 0,
+                rhetoric: 0,
+            };
+            });
+
+            
+            useEffect(() => {
+            localStorage.setItem('leftArmItemStats', JSON.stringify(leftArmItemStats));
+            }, [leftArmItemStats]);
+
+            const [rightArmItemStats, setRightArmItemStats] = useState(() => {
+                const storedStats = localStorage.getItem('rightArmItemStats');
+                return storedStats ? JSON.parse(storedStats) : {
+                    strength: 0,
+                    agility: 0,
+                    intelligence: 0,
+                    defense: 0,
+                    athletics: 0,
+                    rhetoric: 0,
+                };
+                });
+
+
+                useEffect(() => {
+                localStorage.setItem('rightArmItemStats', JSON.stringify(rightArmItemStats));
+                }, [rightArmItemStats]);
+
+
+                const [artifactItemStats, setArtifactItemStats] = useState(() => {
+                const storedStats = localStorage.getItem('artifactItemStats');
+                return storedStats ? JSON.parse(storedStats) : {
+                    strength: 0,
+                    agility: 0,
+                    intelligence: 0,
+                    defense: 0,
+                    athletics: 0,
+                    rhetoric: 0,
+                };
+                });
+
+
+                useEffect(() => {
+                localStorage.setItem('artifactItemStats', JSON.stringify(artifactItemStats));
+                }, [artifactItemStats]);
+
+
+                const [leftLegItemStats, setLeftLegItemStats] = useState(() => {
+                const storedStats = localStorage.getItem('leftLegItemStats');
+                return storedStats ? JSON.parse(storedStats) : {
+                    strength: 0,
+                    agility: 0,
+                    intelligence: 0,
+                    defense: 0,
+                    athletics: 0,
+                    rhetoric: 0,
+                };
+                });
+
+
+                useEffect(() => {
+                localStorage.setItem('leftLegItemStats', JSON.stringify(leftLegItemStats));
+                }, [leftLegItemStats]);
+
+                
+                const [rightLegItemStats, setRightLegItemStats] = useState(() => {
+                const storedStats = localStorage.getItem('rightLegItemStats');
+                return storedStats ? JSON.parse(storedStats) : {
+                    strength: 0,
+                    agility: 0,
+                    intelligence: 0,
+                    defense: 0,
+                    athletics: 0,
+                    rhetoric: 0,
+                };
+                });
+
+
+                useEffect(() => {
+                localStorage.setItem('rightLegItemStats', JSON.stringify(rightLegItemStats));
+                }, [rightLegItemStats]);
+
+
+                const [cloakItemStats, setCloakItemStats] = useState(() => {
+                const storedStats = localStorage.getItem('cloakItemStats');
+                return storedStats ? JSON.parse(storedStats) : {
+                    strength: 0,
+                    agility: 0,
+                    intelligence: 0,
+                    defense: 0,
+                    athletics: 0,
+                    rhetoric: 0,
+                };
+                });
+
+                useEffect(() => {
+                localStorage.setItem('cloakItemStats', JSON.stringify(cloakItemStats));
+                }, [cloakItemStats]);
+
+
+
+
+                // в плавленном состоянии я насколько насрал в код что даже стыдно
+                // статы вставка после выбора 
+    const handleItemStatsChange = (stats) => {
+        setItemStats(stats);
+        if (renderComponent === 'Equip') {
+            setArmorItemStats(stats);
+        } else if (renderComponent === 'Leftarm') {
+            setLeftArmItemStats(stats);
+        } else if (renderComponent === 'Rightarm') {
+            setRightArmItemStats(stats);
+        } else if (renderComponent === 'Artifact') {
+            setArtifactItemStats(stats);
+        } else if (renderComponent === 'LeftLeg') {
+            setLeftLegItemStats(stats);
+        } else if (renderComponent === 'RightLeg') {
+            setRightLegItemStats(stats);
+        }
+        else if (renderComponent === 'Cloak') {
+            setCloakItemStats(stats);
+        }
+    };
         
 
+    // имг вставка после выбора 
     const handleItemImageChange = (imageUrl) => {
         setSelectedItemImage(imageUrl);
         if (renderComponent === 'Equip') {
@@ -134,8 +277,35 @@ function App () {
         }
     };
 
+// --------------------Для названия и описания 
+
+const [leftArmItemTitle, setLeftArmItemTitle] = useState(() =>  {
+    const storedImage = localStorage.getItem('leftArmItemImage');
+    return storedImage ? storedImage : '';
+});
+
+useEffect(() => {
+    localStorage.setItem('leftArmItemImage', leftArmItemImage);
+}, [leftArmItemImage]);
+
+    ;
 
 
+
+    // const handleTitleAndDisc = (title, disc) => {
+    //     setSelectedItemImage(imageUrl);
+    //     if (renderComponent === 'Equip') {
+    //         setArmorItemImage(imageUrl);
+    //     } 
+    // };
+
+
+
+
+
+
+
+// ----------------------------------
     const handleEquipClick = () => {
         SetRenderComponent('Equip');
     };
@@ -268,13 +438,13 @@ function App () {
                 </div>
                 <div className="mid__info">
                     
-                    {renderComponent === 'Equip' && <Equip component={"Armor"} onItemImageChange={handleItemImageChange} onItemStatsChange={handleItemStatsChange} />}
-                    {renderComponent === 'Leftarm' && <Equip component={"Weapon"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange}/>}
-                    {renderComponent === 'Rightarm' && <Equip component={"Weapon"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange}/>}
-                    {renderComponent === 'Artifact' && <Equip component={"Artifact"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange}/>}
-                    {renderComponent === 'LeftLeg' && <Equip component={"Boots"}  onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange}/>}
-                    {renderComponent === 'RightLeg' && <Equip component={"Boots"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange}/>}
-                    {renderComponent === 'Cloak' && <Equip component={"Cloak"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange}/>}
+                    {renderComponent === 'Equip' && <Equip component={"Armor"} onItemImageChange={handleItemImageChange} onItemStatsChange={handleItemStatsChange} initialItemImage={armorItemImage} initialItemStats={armorItemStats} />}
+                    {renderComponent === 'Leftarm' && <Equip component={"Weapon"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange}   initialItemImage={leftArmItemImage} initialItemStats={leftArmItemStats} />}
+                    {renderComponent === 'Rightarm' && <Equip component={"Weapon"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange} initialItemImage={RightArmItemImage} initialItemStats={rightArmItemStats}/>}
+                    {renderComponent === 'Artifact' && <Equip component={"Artifact"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange} initialItemImage={ArtifactItemImage} initialItemStats={artifactItemStats}/>}
+                    {renderComponent === 'LeftLeg' && <Equip component={"Boots"}  onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange} initialItemImage={LeftLegItemImage} initialItemStats={leftLegItemStats}/>}
+                    {renderComponent === 'RightLeg' && <Equip component={"Boots"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange} initialItemImage={RightLegItemImage} initialItemStats={rightLegItemStats}/>}
+                    {renderComponent === 'Cloak' && <Equip component={"Cloak"} onItemImageChange={handleItemImageChange}  onItemStatsChange={handleItemStatsChange} initialItemImage={CloakItemImage} initialItemStats={cloakItemStats}/>}
                     {renderComponent === 'Character' && <Character />} 
                     {renderComponent === 'Cube' && <Cube />}       
                     {renderComponent === 'Magic' && <Magic />}

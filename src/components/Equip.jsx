@@ -11,17 +11,22 @@ import eqparrov from "/images/arrow__buttom.svg"
 function Equip (props) {
     const [ renderModal, setRenderModal] = useState(false);
 
-    const [selectedItemImage, setSelectedItemImage] = useState("");
-
-    const [selectedItemStats, setSelectedItemStats] = useState({
-        strength: 0,
-        agility: 0,
-        intelligence: 0,
-        defense: 0,
-        athletics: 0,
-        rhetoric: 0,
-        spellSlots: 0,
-    });
+    const [selectedItemImage, setSelectedItemImage] = useState(props.initialItemImage);
+    
+    const [selectedItemStats, setSelectedItemStats] = useState(
+        props.initialItemStats ||
+            {
+            name: '',
+            strength: 0,
+            agility: 0,
+            intelligence: 0,
+            defense: 0,
+            athletics: 0,
+            rhetoric: 0,
+            spellSlots: 0,
+            description: "",
+        }
+        );
 
 
     const  toggleModal = () => {
@@ -44,13 +49,25 @@ function Equip (props) {
             description: item.description,
         });
         props.onItemStatsChange({
+            name: item.title,
             strength: item.Str,
             agility: item.Dex,
             intelligence: item.Int,
             defense: item.Def,
             athletics: item.Atl,
             rhetoric: item.Rit,
+            description: item.description,
         });
+        // console.log("onItemStatsChange props:", {
+        //     description: item.description,
+        //     title: item.title,
+        //     strength: item.Str,
+        //     agility: item.Dex,
+        //     intelligence: item.Int,
+        //     defense: item.Def,
+        //     athletics: item.Atl,
+        //     rhetoric: item.Rit,
+        // });
         setRenderModal(false);
     }
 
