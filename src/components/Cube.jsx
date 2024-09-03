@@ -90,6 +90,7 @@ function Cube () {
                 <li>
                     <div className="d-flex">
                     <span>Сила</span>
+                    <span className="test99">Уровень</span>
                     <img className="lvl__img" src={cubesila} alt="sila" />
                     </div>
                     <div className="Cube__input">
