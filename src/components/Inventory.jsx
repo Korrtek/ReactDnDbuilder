@@ -30,13 +30,16 @@ function Inventory () {
         localStorage.setItem('inventoryArea', JSON.stringify(e.target.value));
     };
 
+    const handleBlurMoney = (e) => {
+        localStorage.setItem('money', JSON.stringify(e.target.value));
+    };
 
 
     return (
         <div>
         <div className="Money">
         <span className="Money__span">Монеты</span>
-        <input className="Money__inp" type="text" value={money} onChange={(e) => setMoney(e.target.value)} onBlur={handleBlur} />
+        <input className="Money__inp" type="text" value={money} onChange={(e) => setMoney(e.target.value)} onBlur={handleBlurMoney} />
         </div>
         
         <textarea className="inventory" placeholder="Инвентарь" value={inventoryArea}  onChange={(e) => setInventoryArea(e.target.value)}  onBlur={handleBlur} >
