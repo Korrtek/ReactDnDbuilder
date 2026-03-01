@@ -14,7 +14,7 @@ import gigaarm from "/src/assets/gigaarm.webp"
 import mrach from "/src/assets/mrach.webp"
 import zazd from "/src/assets/zazd.webp"
 import clownKek from "/src/assets/clownKek.webp"
-
+import obichnayaodezda from "/src/assets/obichnayaodezda.webp"
 const GameitemsArmor = [
     {
         id:'a-0',
@@ -26,6 +26,18 @@ const GameitemsArmor = [
         Int: 0,
         Def: 0,
         Atl: 0,
+        Rit: 0,
+    },
+     {
+        id:'a-12345',
+        title: "Обычная одежда",
+        imageUrl: obichnayaodezda,
+        description:"Простая льняная рубаха — основа гардероба любого странствующего воина. Грубоватая, но приятная телу ткань защищает от пота и грязи.",
+        Str: 0,
+        Dex: 0,
+        Int: 0,
+        Def: 0,
+        Atl: 1,
         Rit: 0,
     },
     {
